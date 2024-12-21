@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Booksky</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="text-3xl">BookSky</h1>
+    </div>
+    <div class="p-7 w-full main-container">
+        <div class="book-container max-w-[340px]">
+            <h2 class="text-[20px] font-semibold">Rich Dad poor dad</h2>
+            <h5>Robert</h5>
+            <p class="text-[14px] py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ratione quo accusamus voluptate
+                vitae ex a corrupti fuga harum laborum vel quas ab tempora, eligendi, officia modi odio deserunt?</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2 class="bg-green">Add Book</h2>
+        <form action="#">
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-Author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <div class="w-[100px]">
+        <button id="add-popup-button" class="w-20 h-20 bg-red-500 rounded-full text-4xl font-semibold absolute right-5 bottom-52">+</button>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Your Website | All Rights Reserved</p>
+        <p>Developer </p>
+        <p>Follow us on <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+
+</html>

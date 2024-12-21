@@ -31,9 +31,9 @@ addbook.addEventListener("click",function(event){
    event.preventDefault()
     var div = document.createElement("div")
     div.setAttribute("class","book-container  max-w-[340px]")
-    div.innerHTML=`   <h2>${booktitleinput.value}</h2>
+    div.innerHTML=`   <h2 class="text-[20px] font-semibold">${booktitleinput.value}</h2>
         <h5>${bookauthorinput.value}</h5>
-        <p>${bookdescriptioninput.value}</p>
+        <p class="para text-[14px] py-3 max-w-full">${bookdescriptioninput.value}</p>
         <button onclick="deletebook(event)">Delete</button>`
     container.append(div)
     popupoverlay.style.display="none"

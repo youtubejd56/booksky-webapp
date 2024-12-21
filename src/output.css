@@ -582,10 +582,6 @@ html {
   width: 100px;
 }
 
-.w-\[340px\] {
-  width: 340px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -601,18 +597,6 @@ html {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .p-7 {
@@ -658,6 +642,10 @@ body{
 .navbar{
   background-color: #FD6569;
   padding: 10px;
+}
+
+.para {
+  word-break: break-all;
 }
 
 .container{

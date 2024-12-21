@@ -22,6 +22,9 @@ body{
     background-color: #FD6569;
     padding: 10px;
 }
+.para {
+    word-break: break-all;
+}
 .container{
     padding: 10px;
 }
